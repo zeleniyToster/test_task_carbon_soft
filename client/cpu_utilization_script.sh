@@ -7,7 +7,7 @@
 while true; do
     # Получить текущую утилизацию CPU (%)
     CPU_UTILIZATION=$[100-$(vmstat 1 2|tail -1|awk '{print $15}')]
-    echo "CPU_UTILIZATION" $CPU_UTILIZATION
+    echo "$(date)" "CPU_UTILIZATION" $CPU_UTILIZATION"%" >> ./cpu_utilization_sript_log.log
 
     # Отправить данные на сервер
     #curl -X POST -d "cpu_utilization=$CPU_UTILIZATION" "http://$SERVER_IP:$SERVER_PORT/"
