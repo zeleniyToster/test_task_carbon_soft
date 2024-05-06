@@ -15,9 +15,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.urls import path
+
 from cpu_checker_service import views
 
 urlpatterns = [
     path('', views.index),
     path('cpu/', views.cpu_utilization_data_handler),
+    path('ajax_ep/', views.ajax_cpu_endpoint),
 ]
