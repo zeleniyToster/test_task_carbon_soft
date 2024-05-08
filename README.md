@@ -35,6 +35,6 @@
 4) Активируйте виртуальное окружение командой `source venv/bin/activate`;
 5) Установите зависимости из файла requirements.txt. `pip3 install -r requirements.txt`;
 6) Выполните миграции командой `python3 ./manage.py migrate`;
-7) Из папки `server/cpu_checker` запустите сервер командой `python3 ./manage.py runserver`;
+7) Из папки `cpu_checker` запустите сервер командой `python3 ./manage.py runserver`;
 8) Или запустите сервер на нужном ip и port `python3 ./manage.py runserver SERVER_IP:SERVER_PORT`, где SERVER_IP - ip адресс сервера, SERVER_PORT - порт сервера.
-При выполнении шага 6, БД создаться автоматически в папке `/server/cpu_checker` с именем `db.sqlite3`.
+При выполнении шага 6, БД создаться автоматически в папке `cpu_checker` с именем `db.sqlite3`.
