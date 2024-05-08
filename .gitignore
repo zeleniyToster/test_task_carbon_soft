@@ -4,3 +4,6 @@ __pycache__
 *.pyc
 *.sqlite3*
 .pypirc
+PKG-INFO
+*.tar
+*.tar.gz
