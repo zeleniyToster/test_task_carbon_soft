@@ -1,7 +1,5 @@
 """Скрипт Setup.py для проекта по упаковке."""
-import copy
-
-from setuptools import setup, find_packages
+from setuptools import setup
 
 import os
 
@@ -17,14 +15,14 @@ def read_dependencies():
 if __name__ == '__main__':
     setup(
         name='cpu_utilization_monitoring',
-        version='0.1.1',
+        version='0.1.3',
         author='Basov Ivan',
         author_email='demon_cuc@mail.ru',
         url='https://github.com/zeleniyToster/test_task_carbon_soft',
         download_url='https://github.com/zeleniyToster/test_task_carbon_soft/archive/refs/heads/master.zip',
         package_dir={'': 'cpu_checker'},
         package_data={
-            '': ['*', '*.sh'],
+            '': ['*'],
         },
         description='Тестовое задание для carbon soft.',
         python_requires='>=3.10.4',
